@@ -334,8 +334,8 @@ h2 {
   width: 341px;
 }
 .steps {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 19px;
 }
 .approchstep {
   margin-bottom: 22 px;
@@ -519,17 +519,14 @@ img {
   font-size: 13.5px;
   width: 570px;
   letter-spacing: 0px;
-}
-.sc_line {
-  width: 506px;
   padding-bottom: 36px;
 }
+
 .popup {
   width: 683px;
   height: 480px;
   margin-top: 0px;
   padding-top: 85px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -692,6 +689,22 @@ footer {
   }
   .logo_text {
     display: none;
+  }
+  .right {
+    display: none;
+  }
+  ._icon-pointer-down {
+    cursor: default;
+    animation: none;
+  }
+  #modal {
+    display: relative;
+  }
+  .close_btn {
+    display: none;
+  }
+  .popup {
+    display: flex;
   }
 }
 @media (max-width: 992px) {
