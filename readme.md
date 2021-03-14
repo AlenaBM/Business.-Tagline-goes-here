@@ -19,6 +19,6 @@ In this project I mastered:
 3.css animation;
 4.connecting fonts
 
-You can view the template for this project by clicking on the `template` file.
+You can view the template of this project by clicking on the `template` file.
 
 You can [link to my web-site](https://alena-web.ru/homeworks/Business.-Tagline-goes-here/)
