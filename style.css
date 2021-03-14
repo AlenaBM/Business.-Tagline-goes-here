@@ -66,7 +66,9 @@ body {
   font-family: "Helvetica Neue";
   color: #424242;
 }
-
+img {
+  object-fit: cover;
+}
 div,
 p,
 input,
@@ -160,6 +162,9 @@ a {
   display: inline-block;
   float: right;
   font-weight: bold;
+}
+.menu_hamburger{
+  display: none;
 }
 .btn {
   background: #de2b24;
@@ -409,7 +414,7 @@ i {
 }
 .miniblock {
   height: 274px;
-  width: 25%;
+  width: 100%;
   text-align: center;
   background: #f35e59;
   padding-top: 80px;
@@ -448,30 +453,16 @@ img {
 }
 .previews {
   height: 255px;
-  width: 25%;
+
   box-sizing: border-box;
   display: flex;
   margin: 0;
   padding: 0;
   border: 0;
 }
-.project_bar {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-.secondrow {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  overflow: hidden;
+.projects_wrap {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
 }
 .datas {
   background: #1287bf;
@@ -603,11 +594,22 @@ footer {
   padding-top: 90px;
   background: #2a2a2a;
   text-align: center;
+  position: relative;
 }
 .end {
   color: #fff;
   font-size: 31px;
   padding-bottom: 25px;
+}
+.btn_to_top{
+  position: absolute;
+  bottom: 250px;
+  right: 20px;
+  padding: 17px 19px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border: 1px solid #eee;
 }
 .social {
   border: 3px solid #555555;
@@ -692,10 +694,8 @@ footer {
 — от 320 до 480px */
 
 @media (max-width: 1200px) {
-  body {
-  }
   .container {
-    width: 85%;
+    width: 88%;
     margin: 0 auto;
   }
   .logo_text {
@@ -719,17 +719,330 @@ footer {
   }
 }
 @media (max-width: 992px) {
-  .project_bar,
-  .secondrow {
-    flex-direction: column;
+  .steps {
+    font-size: 12px;
   }
   .projects_wrap {
-    display: flex;
+    grid-template-columns: 1fr 1fr;
+  }
+  .project_1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .project_2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .btn_to_top{
+    display: none;
   }
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  .hface {
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+  .yellow {
+    padding: 20px 30px;
+    font-size: 20px;
+    width: 300px;
+  }
+  
+  .rule {
+    font-size: 22px;
+  }
+  .novigate {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .logo_main_page {
+    max-width: 150px;
+    max-height: 50px;
+    margin-bottom: 10px;
+  }
+  .block1 {
+    flex-wrap: wrap;
+  }
+  .hnovigate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dot {
+    width: 5px;
+    height: 5px;
+    margin-top: 7px;
+  }
+  .bar {
+    flex-direction: column;
+    height: 800px;
+  }
+  .facebook,
+  .book,
+  .message {
+    width: 240px;
+    text-align: center;
+  }
+  .facebook:hover,
+  .book:hover,
+  .message:hover {
+    padding-top: 0px;
+  }
+  .ourwork {
+    padding: 100px 0 100px 0;
+  }
+  .redblock {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .even {
+    margin-right: 20px;
+  }
+  .text {
+    padding: 20px 10px 20px 25px;
+  }
+  .step1,
+  .step2,
+  .step3,
+  .step4 {
+    align-items: center;
+  }
+  .imgst1 {
+    min-width: 300px;
+    height: 100%;
+  }
+  .num {
+    font-size: 50px;
+  }
+  .num_text {
+    display: none;
+  }
+  .num_1_2 {
+    margin-top: 5px;
+  }
+  .miniblock h3 {
+    font-size: 22px;
+  }
+  .miniblock p {
+    font-size: 15px;
+  }
+  .datas {
+    padding-bottom: 100px;
+  }
+  ._icon-pointer-down {
+    font-size: 60px;
+  }
+  .popup {
+    width: 600px;
+    height: 410px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-top: 45px;
+  }
+  .statistic {
+    font-size: 13px;
+    width: 500px;
+  }
+  .end,
+  .block5 h2,
+  .ourwork h2,
+  .title3 h2,
+  .aboutus h2 {
+    font-size: 28px;
+  }
+  .address {
+    max-width: 600px;
+  }
+  .pEnd_after_container {
+    padding: 20px 0 20px 0;
+    font-size: 13px;
+  }
 }
 @media (max-width: 576px) {
+  .hnovigate{
+    display: none;
+  }
+  .block1{
+    display: flex;
+    align-items: center;
+  }
+  .logo_main_page{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .menu_hamburger{
+    display: flex;
+    width: 22px;
+    height: 14px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu_hamburger_line{
+    width: 22px;
+    height: 2px;
+    background-color: #424242;
+  }
+  .hcontact{
+    display: flex;
+    justify-content: space-between;
+  }
+  .text_row_reverse{
+    padding-right: 22px;;
+  }
+  .steps{
+    display: none;
+  }
+  .yellow {
+    padding: 15px 30px;
+    font-size: 17px;
+    width: 250px;
+  }
+  .redblock {
+    display: none;
+  }
+  .popup {
+    width: 350px;
+  }
+  .form_forclients {
+    width: 280px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .imgst1 {
+    max-width: 150px;
+  }
+  .statistic {
+    max-width: 290px;
+  }
+  ._btn5block {
+    padding: 10px 30px;
+    font-size: 15px;
+    width: 280px;
+  }
+  .datas {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .address {
+    max-width: 300px;
+  }
+  .title3,
+  .title4 {
+    width: 300px;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  .number span{
+    display: none;
+  }
+  .mail span{
+    display: none;
+  }
+  .hcontact{
+    justify-content: flex-end;
+  }
+  .mail{
+    padding: 0;
+  }
+  .facebk {
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    margin-left: 13px;
+  }
+  .novigate {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  h1 {
+    font-size: 30px;
+}
+.rule {
+    font-size: 17px;
+    text-align: center;
+}
+.hface{
+  padding-bottom: 150px;
+}
+.aboutus{
+  width: 300px;
+}
+.title5_p {
+  font-size: 17px;
+}
+.descript {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.step1, .step2, .step3, .step4{
+  height: 280px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.approch3 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.projects_wrap{
+  grid-template-columns: 1;
+  grid-template-rows: repeat(5, 1fr);
+}
+.miniblock, .previews{
+  grid-column-start: span 2;
+}
+.el_1{
+  order: 0;
+}
+.el_2{
+  display: none;
+}
+.el_3{
+  display: none;
+}
+
+.el_5{
+  display: none;
+}
+.ourwork{
+  padding: 70px 0 50px 0;
+}
+.popup{
+  width: 100%;
+  height: 320px;
+}
+.statistic{
+  display: none;
+}
+.form_forclients{
+  width: 220px;
+  height: 25px;
+}
+._btn5block{
+  width: 220px;
+}
+footer{
+  padding-top: 50px;
+}
+.address{
+  max-width: 280px;
+}
+.block5 h2{
+  font-size: 24px;
+}
+.title3, .title4 {
+  max-width: 280px;
+}
+.title5_p{
+  font-size: 15px;
+}
 }
