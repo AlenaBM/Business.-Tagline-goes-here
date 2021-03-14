@@ -6,7 +6,7 @@
 *css-анимация;
 *подключение шрифтов
 
-Шаблон этого проекта вы можете найти в папке `<template>`.
+Шаблон этого проекта вы можете посмотреть, кликнув на файл `template`.
 
 [Сам проект](https://alena-web.ru/homeworks/Business.-Tagline-goes-here/)
 
@@ -19,6 +19,6 @@ In this project I mastered:
 *css animation;
 *connecting fonts
 
-Template of this project you can find in the `<templete>` folder.
+You can view the template for this project by clicking on the `template` file.
 
 You can [link to my web-site](https://alena-web.ru/homeworks/Business.-Tagline-goes-here/)
