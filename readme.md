@@ -8,7 +8,7 @@
 
 Шаблон этого проекта вы можете посмотреть, кликнув на файл `template`.
 
-[Сам проект](https://alena-web.ru/homeworks/Business.-Tagline-goes-here/)
+[Кликни на меня, чтобы посмотреть проект](https://alena-web.ru/homeworks/Business.-Tagline-goes-here/)
 
 
 Hello, it's my the most first website. It was my first tryings to create something decent :)
