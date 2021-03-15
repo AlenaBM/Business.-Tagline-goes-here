@@ -4,7 +4,7 @@
 1.html-структура;
 2.css;
 3.css-анимация;
-4.подключение шрифтов
+
 
 Шаблон этого проекта вы можете посмотреть, кликнув на файл `template`.
 
@@ -17,7 +17,7 @@ In this project I mastered:
 1.html structure;
 2.css;
 3.css animation;
-4.connecting fonts
+
 
 You can view the template of this project by clicking on the `template` file.
 
